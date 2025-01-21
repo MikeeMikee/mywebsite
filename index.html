@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mikhail Poliakov</title>
+</head>
+
+<body>
+    <header>
+        <h1>MY OWN WEBSITE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div id="home" class="home">
+            <img src="img/photo.png" alt="photo">
+            <div class="text">
+                <h1>Mikhail Poliakov</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur aliquam ultricies. 
+                    Donec placerat dignissim lacus, in malesuada leo fermentum quis.</p>
+            </div>
+            
+        </div>
+        <div id="projects" class="projects">
+            <h1>Projects</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur aliquam ultricies. 
+                Donec placerat dignissim lacus, in malesuada leo fermentum quis.
+                Cras faucibus posuere vestibulum. Nullam at sapien mattis, bibendum purus et, euismod est.
+                Maecenas finibus interdum tincidunt. Nullam lacinia ligula massa, nec efficitur nisi eleifend et.</p>
+            <div class="three-in-row">
+                <div class="part">
+                    <img src="img/telegram_bots.png" alt="telegram_bots">
+                    <h2>Telegram bots</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur aliquam ultricies.</p>
+                </div>
+                <div class="part">
+                    <img src="img/data_analytics.png" alt="data_analytics">
+                    <h2>Data analytics</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing in malesuada leo fermentum quis elit. Maecenas consectetur aliquam ultricies.</p>
+                </div>
+                <div class="part">
+                    <img src="img/trading_bots.png" alt="trading_bots">
+                    <h2>Trading bots</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing pupupu elit. Maecenas consectetur aliquam ultricies.</p>
+                </div>
+            </div>
+        </div>        
+        <div id="languages" class="languages">
+            <h1>Languages</h1>
+            <div class="two-in-row">
+                <div class="part">
+                    <img src="img/python.png" alt="python">
+                    <h2>Python</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit. Maecenas consectetur aliquam ultricies. 
+                        Cras faucibus posuere vestibulum. Nullam at sapien mattis, bibendum purus et, euismod est.</p>
+                </div>
+                <div class="part">
+                    <img src="img/cpp.png" alt="c++">
+                    <h2>C++</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing tututu elit. Maecenas consectetur aliquam ultricies.
+                        Cras faucibus posuere vestibulum. Nullam at sapien mattis, bibendum purus et, euismod est.</p>
+                </div>
+            </div>
+        </div>        
+        <div id="links" class="links">
+            <h1>Links</h1>
+            <div class="social-icons">
+                <a href="https://t.me/mikeemikee" target="_blank">
+                    <img src="img/telegram.png" alt="telegram">
+                </a>
+                <a href="https://x.com/mkplkv" target="_blank">
+                    <img src="img/twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/mkplkv" target="_blank">
+                    <img src="img/instagram.png" alt="instagram">
+                </a>
+                <a href="https://discord.com/users/mike6174" target="_blank">
+                    <img src="img/discord.png" alt="discord">
+                </a>
+            </div>
+        </div>                
+    </div>
+    <footer id="contacts" class="contacts">
+        <h1>Contacts</h1>
+        <div class="contact-container">
+            <div class="contact-item">
+                <span>Phone number:</span>
+                <div class="contact-box" id="phone-number" onclick="copy_text('phone-number')">+381 63 7777 777</div>
+            </div>
+            <div class="contact-item">
+                <span>Email:</span>
+                <div class="contact-box" id="email-address" onclick="copy_text('email-address')">m.polyakov.2004@gmail.com</div>
+            </div>
+        </div>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>  
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="button" class="submit-button">Submit</button>
+        </form>
+        <p class="footer-text">Copyright © All rights Reserved</p>
+    </footer>       
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
