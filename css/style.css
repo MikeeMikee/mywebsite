@@ -1,0 +1,365 @@
+body {
+    background-color: #171717;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h4, p, a, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+    color: #acabab;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(23, 23, 23, 0.8); /* Полупрозрачный черный цвет */
+    backdrop-filter: blur(10px); /* Размытие фона за заголовком */
+    box-shadow: none;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+header.scroll {
+    transform: translateY(-105px);
+}
+
+header h1 {
+    float: left;
+    font-size: 40px;
+    padding-left: 30px;
+    color: #5EB5F7;
+}
+
+header nav {
+    float: right;
+    padding-top: 30px;
+    padding-right: 100px;
+}
+
+header nav ul {
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 25px;
+}
+
+header nav ul li a {
+    color: #999999;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+.wrapper {
+    margin-top: 150px;
+}
+
+.wrapper .home {
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Распределяем содержимое по краям */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+}
+
+.wrapper .home img {
+    height: 400px; /* Фиксированная высота */
+    width: auto; /* Сохраняем пропорции */
+    margin-left: 5%; /* Отступ слева */
+    order: 1; /* Устанавливаем порядок для изображения */
+}
+
+.wrapper .home .text {
+    text-align: left;
+    width: 500px;
+    height: 300px;
+    margin-right: 10%; /* Отступ справа для текста */
+    order: 2; /* Устанавливаем порядок для текста */
+}
+
+.wrapper .home .text h1 {
+    padding-bottom: 40px;
+}
+
+
+
+.wrapper .projects {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 150px; /* Уменьшаем нижний отступ */
+}
+
+.wrapper .projects h1 {
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+}
+
+.wrapper .projects p {
+    margin-bottom: 30px; /* Уменьшаем расстояние между текстом и столбцами */
+}
+
+.wrapper .projects .three-in-row {
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: space-between; /* Равномерное распределение столбцов */
+    align-items: flex-start; /* Выравниваем элементы по началу */
+}
+
+.wrapper .projects .three-in-row .part {
+    width: 350px;
+    text-align: center; /* Центрируем содержимое столбцов */
+    margin-top: 20px; /* Уменьшаем отступ сверху */
+}
+
+.wrapper .projects .three-in-row .part img {
+    width: 100px;
+    height: 100px; /* Фиксированный размер картинок */
+    object-fit: cover; /* Обрезаем изображения для сохранения пропорций */
+    border-radius: 20px; /* Добавляем скругление */
+    margin-bottom: 15px; /* Расстояние между изображением и заголовком */
+}
+
+.wrapper .projects .three-in-row .part h2 {
+    margin: 10px 0; /* Уменьшаем отступы вокруг заголовков */
+}
+
+.wrapper .projects .three-in-row .part p {
+    color: #acabab;
+    font-size: 18px; /* Размер шрифта описания */
+}
+
+
+
+.wrapper .languages {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.wrapper .languages h1 {
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+}
+
+.wrapper .languages .two-in-row {
+    display: flex; /* Flexbox для выравнивания */
+    justify-content: space-between; /* Распределение элементов */
+    align-items: flex-start; /* Выравнивание по верху */
+}
+
+.wrapper .languages .two-in-row .part {
+    width: 500px; /* Ширина для двух столбцов */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper .languages .two-in-row .part img {
+    width: 150px;
+    height: 150px; /* Фиксированный размер картинок */
+    object-fit: cover; /* Обрезаем лишние части для пропорций */
+    border-radius: 15px; /* Скругление */
+    margin-bottom: 15px;
+}
+
+.wrapper .languages .two-in-row .part h2 {
+    margin: 10px 0;
+}
+
+.wrapper .languages .two-in-row .part p {
+    color: #acabab;
+    font-size: 18px;
+}
+
+
+
+.links {
+    width: 100%;
+    height: 500px; /* Высота раздела */
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.links h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #fff; /* Оставляем текст белым */
+}
+
+.links .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Расстояние между изображениями */
+    align-items: center;
+    height: 100%;
+}
+
+.links .social-icons a img {
+    width: 125px; /* Ширина логотипов */
+    height: 125px; /* Высота логотипов */
+    object-fit: cover; /* Обрезка лишних частей */
+}
+
+.links .social-icons a img:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.links .social-icons a img:active {
+    transform: scale(0.95); /* Увеличение при наведении */
+}
+
+
+
+.contacts {
+    width: 100%;
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.contacts h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact-item span {
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    background-color: #252525;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-box:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.contact-form {
+    background-color: #252525;
+    padding: 30px;
+    margin: 20px auto;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы формы */
+    gap: 20px;
+    color: #ffffff;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%; /* Уменьшаем ширину полей для центрирования */
+}
+
+.contact-form label {
+    font-size: 18px;
+    text-align: left; /* Выравниваем текст слева */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form .submit-button {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 10px 40px; /* Уменьшаем ширину кнопки */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #555555;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #acabab;
+    margin-top: 20px;
+    text-align: center;
+}
